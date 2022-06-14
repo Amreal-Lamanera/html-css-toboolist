@@ -28,14 +28,14 @@ a {
 
 /* Proprietà header */
 .main-header {
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .main-header,
 .container {
-    /* background-color: #FFFFFF; */
+    background-color: #FFFFFF;
     /* colore per debug */
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .main-header * {
@@ -52,10 +52,34 @@ a {
     height: 300px;
     max-width: 800px;
     margin: 40px auto;
+    border-radius: 8px;
 }
 
 /* Proprietà main */
 
 /* Proprietà main-header */
+.button-container {
+    border-bottom: 1px solid #F6F8F9;
+    padding: 15px 40px 5px;
+}
+
+.button-container button {
+    background-color: #FFFFFF;
+    padding: 8px;
+    font-size: 0.7em;
+    border-radius: 6px;
+    border: none;
+}
+
+.button-container .selected-button {
+    background-color: #45ABEA;
+    color: #FFFFFF;
+}
+
+.button-container .unselected-button {
+    background-color: #FFFFFF;
+    color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+}
 
 /* Proprietà main-section */
