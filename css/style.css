@@ -125,8 +125,8 @@ ul h3 {
 
 .element-list.check-item::before {
     content: '\1F5F8';
-    color: #00FF00;
-    border: 1px solid #00FF00;
+    color: #64C0A9;
+    border: 1px solid #64C0A9;
 }
 
 .element-list.cross-item::before {
