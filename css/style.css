@@ -122,3 +122,15 @@ ul h3 {
     color: #00FF00;
     border: 1px solid #00FF00;
 }
+
+.badge {
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.badge.editorial {
+    background-color: #45ABEA;
+}
