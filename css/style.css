@@ -59,7 +59,7 @@ a {
 /* Proprietà main-header */
 .button-container {
     border-bottom: 1px solid #F6F8F9;
-    padding: 15px 40px 10px;
+    padding: 15px 50px 10px;
 }
 
 .button-container button {
@@ -84,7 +84,7 @@ a {
 
 /* Proprietà main-section */
 .sections-container {
-    padding: 40px 60px;
+    padding: 30px 50px;
 }
 
 /* Elimino stile lista di default e aggiungo padding verticale fra gli elementi */
@@ -110,7 +110,7 @@ ul h3 {
 }
 
 .title-list::before {
-    margin: 0 10px;
+    margin-right: 10px;
     content: '\23F7';
 }
 
@@ -120,7 +120,8 @@ ul h3 {
     text-align: center;
     width: 15px;
     height: 15px;
-    margin: 0 20px 0 10px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .element-list.check-item::before {
