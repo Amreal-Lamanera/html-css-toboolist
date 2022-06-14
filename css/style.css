@@ -68,6 +68,7 @@ a {
     font-size: 0.7em;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
 }
 
 .button-container .selected-button {
@@ -106,6 +107,7 @@ ul h3 {
 .element-list::before {
     display: inline-block;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .title-list::before {
