@@ -19,13 +19,26 @@ a {
     color: black;
 }
 
-/* Proprietà di debug */
-.debug * {
+/* Proprietà di debug - le metto all'inizio per le regole della specificità */
+body * {
     border: 2px solid red;
     padding: 15px;
+    background-color: goldenrod;
 }
 
 /* Proprietà header */
+header,
+.container {
+    /* background-color: #FFFFFF; */
+    /* colore per debug */
+    background-color: blue;
+}
+
+/* Proprietà container */
+.container {
+    /* Altezza per vedere qualcosa */
+    height: 600px;
+}
 
 /* Proprietà main */
 
