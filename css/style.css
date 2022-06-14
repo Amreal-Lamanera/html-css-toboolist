@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -20,24 +21,37 @@ a {
 }
 
 /* Proprietà di debug - le metto all'inizio per le regole della specificità */
-body * {
+/* body * {
     border: 2px solid red;
     padding: 15px;
-    background-color: goldenrod;
-}
+} */
 
 /* Proprietà header */
-header,
+.main-header {
+    padding: 10px 0;
+}
+
+.main-header,
 .container {
     /* background-color: #FFFFFF; */
     /* colore per debug */
     background-color: blue;
 }
 
+.main-header * {
+    vertical-align: middle;
+}
+
+.main-header h1 {
+    display: inline-block;
+}
+
 /* Proprietà container */
 .container {
     /* Altezza per vedere qualcosa */
-    height: 600px;
+    height: 300px;
+    max-width: 800px;
+    margin: 40px auto;
 }
 
 /* Proprietà main */
