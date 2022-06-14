@@ -27,22 +27,22 @@ a {
 } */
 
 /* Proprietà header */
-.main-header {
+.logo-header {
     padding: 10px;
 }
 
-.main-header,
+.logo-header,
 .container {
     background-color: #FFFFFF;
     /* colore per debug */
     /* background-color: blue; */
 }
 
-.main-header * {
+.logo-header * {
     vertical-align: middle;
 }
 
-.main-header h1 {
+.logo-header h1 {
     display: inline-block;
 }
 
