@@ -49,7 +49,6 @@ a {
 /* Proprietà container */
 .container {
     /* Altezza per vedere qualcosa */
-    height: 300px;
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
@@ -60,12 +59,12 @@ a {
 /* Proprietà main-header */
 .button-container {
     border-bottom: 1px solid #F6F8F9;
-    padding: 15px 40px 5px;
+    padding: 15px 40px 10px;
 }
 
 .button-container button {
     background-color: #FFFFFF;
-    padding: 8px;
+    padding: 5px 8px;
     font-size: 0.7em;
     border-radius: 6px;
     border: none;
@@ -83,14 +82,18 @@ a {
 }
 
 /* Proprietà main-section */
-main section {
+.sections-container {
     padding: 40px 60px;
 }
 
 /* Elimino stile lista di default e aggiungo padding verticale fra gli elementi */
 ul {
     list-style-type: none;
-    padding: 10px 0;
+}
+
+ul,
+li {
+    padding: 5px 0;
 }
 
 /* h3 inline */
@@ -98,7 +101,7 @@ ul h3 {
     display: inline;
 }
 
-/* personalizzo la stile della lista grazie a ::before */
+/* personalizzo lo stile della lista grazie a ::before */
 .title-list::before,
 .element-list::before {
     display: inline-block;
@@ -123,6 +126,13 @@ ul h3 {
     border: 1px solid #00FF00;
 }
 
+.element-list.cross-item::before {
+    content: '\2717';
+    color: #FF0000;
+    border: 1px solid #FF0000;
+}
+
+/* Gestione stile dei badge */
 .badge {
     color: white;
     border-radius: 15px;
@@ -133,4 +143,24 @@ ul h3 {
 
 .badge.editorial {
     background-color: #45ABEA;
+}
+
+.badge.q1-goals {
+    background-color: #9C72E4;
+}
+
+.badge.recruiting {
+    background-color: #64C0A9;
+}
+
+.badge.mobile {
+    background-color: #F29E33;
+}
+
+.badge.website {
+    background-color: #D863A1;
+}
+
+.badge.sales {
+    background-color: #B0C926;
 }
