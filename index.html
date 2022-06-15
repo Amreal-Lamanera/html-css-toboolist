@@ -28,11 +28,13 @@
             <h1>Toboolist</h1>
         </header>
 
-        <!-- Contenitore di tutto il corpo della pagina -->
-        <div class="container">
 
-            <!-- Corpo pagina -->
-            <main>
+        <!-- Corpo pagina -->
+        <main>
+
+            <!-- Contenitore di tutto il corpo della pagina -->
+            <!-- container dentro main e non il contrario come regola generale: in una pagina web più lunga e composta si potrebbe avere un main con varie sezioni "strette" e quindi dentro ad un div container, mescolate a elementi larghi il 100% -->
+            <div class="container">
 
                 <!-- Intestazione del corpo? -->
                 <header class="button-container">
@@ -49,49 +51,52 @@
                                 <h3>New Task</h3>
                                 <ul>
                                     <li class="element-list check-item">Quarterly Newsletter <strong
-                                            class="badge editorial">Editorial</strong></li>
+                                            class="badge badge--editorial">Editorial</strong></li>
                                 </ul>
                             </li>
                         </ul>
                     </section>
+
                     <section>
                         <ul>
                             <li class="title-list">
                                 <h3>Today</h3>
                                 <ul>
                                     <li class="element-list check-item">Recriuting blog post <strong
-                                            class="badge editorial">Editorial</strong></li>
+                                            class="badge badge--editorial">Editorial</strong></li>
                                     <li class="element-list check-item">Mobile app launch <strong
-                                            class="badge q1-goals">Q1 Goals</strong></li>
+                                            class="badge badge--q1-goals">Q1 Goals</strong></li>
                                     <li class="element-list cross-item">Interview John H. <strong
-                                            class="badge recruiting">Recriuting</strong></li>
+                                            class="badge badge--recruiting">Recriuting</strong></li>
                                     <li class="element-list check-item">Summit update to mobile storefronts <strong
-                                            class="badge mobile">Mobile</strong></li>
+                                            class="badge badge--mobile">Mobile</strong></li>
                                 </ul>
                             </li>
                         </ul>
                     </section>
+
                     <section>
                         <ul>
                             <li class="title-list">
                                 <h3>Upcoming</h3>
                                 <ul>
+                                    <!-- per i nomi delle classi avrei potuto usare delle specifiche/convenzioni ad esempio "element-list element-list__cross" e "element-list element-list__check" o come ho corretto nel badge. Tutto ciò si chiama "metodo bem" -->
                                     <li class="element-list cross-item">Schedule meeting with Alex</li>
                                     <li class="element-list check-item">Homepage refresh <strong
-                                            class="badge website">Website</strong></li>
+                                            class="badge badge--website">Website</strong></li>
                                     <li class="element-list check-item">Onboard new Sales team members <strong
-                                            class="badge sales">Sales</strong></li>
+                                            class="badge badge--sales">Sales</strong></li>
                                     <li class="element-list check-item">Review editorial calendar <strong
-                                            class="badge editorial">Editorial</strong></li>
+                                            class="badge badge--editorial">Editorial</strong></li>
                                 </ul>
                             </li>
                         </ul>
                     </section>
                 </div>
 
-            </main>
+            </div>
 
-        </div>
+        </main>
 
     </body>
 
