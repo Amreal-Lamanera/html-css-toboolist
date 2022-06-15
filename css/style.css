@@ -62,12 +62,13 @@ a {
 
 .button-container button {
     background-color: transparent;
+    border: none;
+    /* I primi due potrebbero essere dei reset generici */
     padding: 0 8px;
     /* line-height al posto del padding verticale così la dimensione del font non influisce sull'altezza del button */
     line-height: 20px;
     font-size: 0.7em;
     border-radius: 6px;
-    border: none;
     cursor: pointer;
 }
 
